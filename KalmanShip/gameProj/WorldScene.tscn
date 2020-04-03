@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ship_parallax_complete.png" type="Texture" id=1]
+[ext_resource path="res://Sprite.gd" type="Script" id=2]
+[ext_resource path="res://Wilderness.png" type="Texture" id=3]
+[ext_resource path="res://tower_2 (1).png" type="Texture" id=4]
+[ext_resource path="res://Elevator Rail.png" type="Texture" id=5]
+
+[node name="WorldScene" type="Node2D"]
+
+[node name="Ship" type="Sprite" parent="."]
+position = Vector2( 64.1283, 266.164 )
+scale = Vector2( 0.0965393, 0.108389 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Wilderness" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 999.822, 349.992 )
+scale = Vector2( 0.193884, 0.215804 )
+texture = ExtResource( 3 )
+
+[node name="tower" type="Sprite" parent="Wilderness"]
+position = Vector2( -595.769, -391.714 )
+texture = ExtResource( 4 )
+
+[node name="Elevator Rail" type="Sprite" parent="Wilderness"]
+show_behind_parent = true
+position = Vector2( -2930.97, -141.756 )
+rotation = 1.5708
+scale = Vector2( 0.193592, 2.16397 )
+texture = ExtResource( 5 )
