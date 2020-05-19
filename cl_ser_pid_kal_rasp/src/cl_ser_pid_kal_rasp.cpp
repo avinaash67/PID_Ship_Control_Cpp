@@ -17,7 +17,7 @@
 #include <iostream>
 #include <pthread.h>
 #include <stdlib.h>
-#include <eigen3/Eigen/Dense>
+#include "/usr/include/eigen3/Eigen/Dense"
 
 #include "./kalman-filter.hpp"
 #include "./pid.h"

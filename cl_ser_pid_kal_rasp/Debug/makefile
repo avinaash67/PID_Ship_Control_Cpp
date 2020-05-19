@@ -44,7 +44,7 @@ all: cl_ser_pid_kal_rasp
 cl_ser_pid_kal_rasp: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	arm-linux-gnueabihf-g++ -L/usr/eigen3/Eigen -o "cl_ser_pid_kal_rasp" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-linux-gnueabihf-g++ -L/usr/include/eigen3/Eigen -o "cl_ser_pid_kal_rasp" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
