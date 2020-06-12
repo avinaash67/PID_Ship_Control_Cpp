@@ -20,7 +20,7 @@ run/main_scene="res://WorldScene.tscn"
 
 [debug]
 
-settings/fps/force_fps=10
+settings/fps/force_fps=50
 
 [rendering]
 

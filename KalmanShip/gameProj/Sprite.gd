@@ -27,11 +27,11 @@ func _ready():
 	
 	commServer = PacketPeerUDP.new()
 	#commServer.set_dest_address("127.0.0.1",4244)
-	commServer.set_dest_address("169.254.102.146",4244)
-	if(commServer.listen(4244,"169.254.102.146") != OK):
+	commServer.set_dest_address("127.0.0.1",4244)
+	if(commServer.listen(4244,"127.0.0.1") != OK):
 		print("an error occurred listening on port " + str(4244))
 	else:
-		print("Listening on port " + str(4244) + " on " + "169.254.102.146")
+		print("Listening on port " + str(4244) + " on " + "127.0.0.1")
 	
 func _peer_connected(id):
 	var text = "\nUser " + str(id) + " connected"
