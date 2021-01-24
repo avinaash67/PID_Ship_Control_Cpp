@@ -11,6 +11,7 @@
     * Multiple Client- Server
     
   * Multithreaded Socket
+    * Posix threads (pthread)
     * Mutex locking
     
 
